@@ -1,0 +1,78 @@
+*{
+    text-align: center;
+    text-shadow: 5px;
+    box-sizing: border-box;
+   
+}      
+.boxhead{
+    overflow: hidden;
+    background-image: url("apni file/form2.jpg");
+    border: solid blue;
+
+}
+.head{
+    float: left;
+    background-color: rgb(103, 61, 201);
+}
+@media screen and (max-width:450px) {
+    .head{
+        width: 100%;
+        height: 120px;
+        font-size: 40px;
+        border:2px solid blue;
+        padding: 20px;
+    }
+}
+@media screen and (min-width:451px) and (max-width:1000px) {
+    .head{
+       width: 50%;
+       height: 120px;
+       font-size: 40px;
+       border: 2px solid blue;
+       padding: 20px;
+    }
+}
+@media screen and (min-width:1000px) {
+    .head{
+       width: 33.3%;
+       height: 120px;
+       font-size: 40px;
+       border: 5px solid blue;
+       padding: 20px;
+    }
+}
+.sub:hover{
+    font-size: 50px;
+    background-color:skyblue;
+}
+.thead{
+    float: left;
+    background-color: rgb(103, 61, 201);
+}
+@media screen and (max-width:450px) {
+    .thead{
+        width: 100%;
+        height: 120px;
+        font-size: 40px;
+        border:2px solid blue;
+        padding: 20px;
+    }
+}
+@media screen and (min-width:451px) and (max-width:1000px) {
+    .thead{
+       width: 50%;
+       height: 120px;
+       font-size: 40px;
+       border: 2px solid blue;
+       padding: 20px;
+    }
+}
+@media screen and (min-width:1000px) {
+    .thead{
+       width: 33.3%;
+       height: 120px;
+       font-size: 40px;
+       border: 5px solid blue;
+       padding: 20px;
+    }
+}

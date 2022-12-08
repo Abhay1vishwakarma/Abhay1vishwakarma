@@ -1,0 +1,272 @@
+li[class]{
+    color: orange;
+    font-size: bold;
+}
+thead+tr{
+    color: blueviolet;
+    font-size: bold;
+}
+#heading{
+    color: brown;
+    background-color: rgba(238, 228, 228, 0.787);
+}
+form{
+    background-color: rgba(180, 189, 189, 0.828);
+    padding: 22px;
+}
+h2{
+    border-radius: 47px;
+}
+table,th,td,tr{
+    border: 1px solid coral;
+    padding: 2px;
+    border-spacing: 1px;
+    border-collapse: collapse;
+}
+th{
+    background-color: aquamarine;
+
+}
+tr{
+    background-color: rgb(243, 209, 106) ;
+}
+.img{
+        clip-path: circle(45.4% at 50% 50%);
+    margin-top: 1cm;
+    margin-left: 12cm;
+    margin-right: 11cm;
+    margin-bottom: 1cm;
+    width: 200px;
+    height: 200px;
+    
+} 
+@media all and (min-width:1001){
+a:after{
+    content: "("attr(data-email)")";
+    font-size: 11px;
+    padding: 10px;
+}
+}
+.web{
+    background-color: aqua;
+}
+.heading{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(138, 2, 2);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.box-1{
+    width: 900px;
+    height: 120px;
+    border: 5px solid lightblue;
+    border-radius: 5px;
+    padding: 10px;
+    margin:auto;
+    background-color: rgba(52, 150, 186, 0.915);
+
+}
+
+.box1{
+    float: left;
+    width: 100px;
+    height: 100px;
+    padding: 8px;
+    clip-path: circle(42.4% at 50% 50%);
+}
+.box-2{
+    width: 900px;
+    height: 120px;
+    border: 5px solid lightblue;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 15px;
+    background-color: rgba(52, 150, 186, 0.915);
+
+}
+
+.box2{
+    float: right;
+    width: 100px;
+    height: 100px;
+    padding: 8px;
+    clip-path: circle(42.4% at 50% 50%);
+
+}
+.box-3{
+    width: 900px;
+    height: 120px;
+    border: 5px solid lightblue;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 15px;
+    background-color: rgba(52, 150, 186, 0.915);
+
+}
+
+.box3{
+    float: left;
+    width: 100px;
+    height: 100px;
+    padding: 8px;
+    clip-path: circle(42.4% at 50% 50%);
+
+}
+.box-4{
+    width: 900px;
+    height: 120px;
+    border: 5px solid lightblue;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 15px;
+    background-color: rgba(52, 150, 186, 0.915);
+
+}
+
+.box4{
+    float: right;
+    width: 100px;
+    height: 100px;
+    padding: 8px;
+    clip-path: circle(42.4% at 50% 50%);
+
+}
+.nav{
+    text-decoration: none;
+    color: rgba(240, 248, 255, 0.966);
+    background-color: rgba(21, 3, 3, 0.733);
+    
+}
+
+.form{
+    background-image: url("apni file/form2.jpg");
+    background-repeat: no-repeat;
+    background-size: 3000px;
+
+}
+.body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin: 15px 30px;
+    font-size: 15px;
+    padding: 15px;
+    margin-top: 1cm;
+    margin-bottom: 2cm;
+    margin-left: 5cm;
+    margin-right: 5cm;
+    
+   
+
+                                                                     
+}
+.container{
+    background-color:rgba(238, 234, 249, 0.944);
+    padding: 5px 15px 15px 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+input[type="password"],
+select,
+textarea{
+    width: 90%;
+    padding: 26px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    text-shadow: 15px;
+    box-shadow: 35px solid gray;
+
+}
+fieldset{
+    background-color:white;
+    border: 1px solid grey;
+    border-radius: 2px;
+}
+h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#heading{
+    text-align: center;
+    background-color: rgba(75, 75, 192, 0.768);
+    width: 95%;
+    padding:15px;
+    margin:0%;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+input[type="submit"]{
+    background-color: aquamarine;
+    color: rgba(57, 15, 142, 0.906);
+    border: 2px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    cursor:pointer;
+    width: 100%;
+    font-weight: bold;
+    font-size: large;
+}
+input[type="submit"]:hover{
+background-color: aqua;
+}
+input[type="reset"]{
+    background-color: rgb(86, 86, 159);
+    color: rgba(57, 15, 142, 0.906);
+    border: 2px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 4px;
+    cursor:pointer;
+    width: 100%;
+    font-weight: bold;
+    font-size: large;
+    margin-top: 15px;
+}
+input[type="reset"]:hover{
+    background-color: rgba(19, 19, 207, 0.529);
+}
+.table-flex{
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex-row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 1cm;
+ }
+ #img{
+     width: 250px;
+     height: 250px;
+     border-radius: 5px;
+ }
+ button:hover{
+     width: 100px;
+     height: 30px;
+     background-color: rgb(175, 167, 184);
+ }
+ button{
+     background-color: azure;
+     border: 1px solid black;
+     border-radius: 5px;
+     height: 30px;
+     width: 100px;
+    color: blue;
+ 
+ }
+ .flex-item{
+     width: 250px;
+     height: 460px;
+     background-color: bisque;
+     border-radius: 5px;
+     text-align: center;
+     padding: 15px;
+ }

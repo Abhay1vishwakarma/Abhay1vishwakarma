@@ -1,0 +1,108 @@
+nav a{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgba(119, 102, 102, 0.844);
+    padding: 50px;
+    float: right;
+    position: relative;
+    bottom: 38px;
+}
+nav{
+    height: 50px;
+    width: 98.1%;
+    background-color:rgba(240, 243, 241, 0.95) ;
+    position: fixed;
+    border: 1px solid rgba(23, 4, 4, 0.8);
+text-align: center;
+}
+.img{
+    position: relative;
+    top: 5px;
+    background-color:rgba(28, 165, 74, 0.222);
+}
+a:hover{
+    color:blue;
+}
+nav:hover{
+    height:55px;
+}
+.img:hover{
+    border: 2px solid darkgrey;
+}
+.box1{
+    background-attachment: fixed;
+    background-color:rgb(128, 128, 128) ;
+    height: 8cm;
+    padding: 100px;
+    text-align: center;
+    color: white;
+    
+}
+.head{
+    font-size: 68px;
+}
+button{
+    width: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 50px;
+    color: white;
+    text-transform: uppercase;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color:darkgrey ;
+}
+button:hover{
+    background-color: white;
+    color: black;
+}
+.headh2{
+ 
+    color: darkgrey;
+}
+.head2{
+    font-size: 50px;
+  
+    color: rgba(147, 28, 28, 0.891);
+}
+.box2{
+    padding:50px;
+    text-align: center;
+    height: 5cm;
+    margin-left:5.5cm ;
+    margin-right: 5.5cm;
+    margin-bottom: 5cm;
+    
+}
+.img1{
+    height: 4cm;
+    width: 8cm;
+    border-radius: 5px;
+}
+.flex{
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    padding: 50px;
+    /* border-radius: 5px;
+    border: 2px solid darkgray; */
+}
+.flex-row{
+   display: flex;
+   justify-content: space-around;
+}
+p{
+    color: darkgray;
+}
+.box3{
+    background-image: url("apni file/artical2.jpg");
+    background-repeat: no-repeat;
+    background-size: 1100px;
+    background-attachment: fixed;
+    height: 8cm;
+    padding: 100px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.976);
+}
+    
+    
+
+    

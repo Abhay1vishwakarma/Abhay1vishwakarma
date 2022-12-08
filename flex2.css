@@ -1,0 +1,32 @@
+
+.flex-row{
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+}
+img{
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+}
+button:hover{
+    width: 100px;
+    height: 30px;
+    background-color: rgb(175, 167, 184);
+}
+button{
+    background-color: azure;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
+
+}
+.flex-item{
+    width: 250px;
+    height: 460px;
+    background-color: bisque;
+    border-radius: 5px;
+    text-align: center;
+    padding: 15px;
+}
