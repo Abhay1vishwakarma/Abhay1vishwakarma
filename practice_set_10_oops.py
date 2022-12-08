@@ -46,7 +46,7 @@ class Calculator:
     def qube(self):
         print(f"the qube of {self.num} is {self.num**3}")
     @staticmethod     
-    def greet():
+    def greet(): 
         print("welcome to our calculator")
             
      
@@ -69,5 +69,26 @@ class Train:
 intercity=Train("rajdhani express",90,576)
 intercity.get_info()            
         
-               
+class Train:
+    def __init__(self,name,fare,seat):
+        self.name=name        
+        self.fare=fare       
+        self.seat=seat
+    def getstatus(self):
+        print(f"the name of train is {self.name}")
+        print(f"the seats of train is {self.seat}")
+    def fareinfo(self):
+        print(f"the price of ticket is {self.fare}")
+    def bookticket(self):
+        if(self.seat>0):
+            print(f"your ticket has been booked your number is {self.seat}")
+            self.seat=self.seat-1
+            print(f"seats are {self.seat}")
+        else:
+            print("sorry seats have full try to tatkal")
+intercity=Train("intercity express: 14208",110,1)                        
+intercity.getstatus()            
+intercity.fareinfo()            
+intercity.bookticket()            
+intercity.bookticket()               
         
