@@ -4,50 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>form</title>
 </head>
 <body>
-    <div class="form">
-    <div class="body">
     <form action="">
-        <h1 id="heading">contact information</h1>
-        <div class="container">
-        <h3>required field are follwowed by *</h3>
-        <p>name *<input type="text" name="name" placeholder="enter name" required></p>
-        <p>father name *<input type="text" name="father name" placeholder="enter father name" required ></p>
-        <p><textarea name="address" id="address" placeholder="enter address" cols="" rows="5" required></textarea></p>
-      <p> 
-        <fieldset>  
-        <legend>gender *</legend>
-        male<input type="radio" name="gender" id="male" required>  female<input type="radio" name="gender" id="female" required>
+    <h1>contact information</h1>
+    <p>name* <input type="text" name="name" id="name" placeholder="Enter your name" required></p>
+    <p>father name* <input type="text" name="father name" id="father name" placeholder="Enter your father name " required></p>
+    <p>address*-<address><textarea name="address" id="address" cols="20" rows="10" placeholder="Enter your address" required></textarea></address></p>
+    <p> <fieldset>
+        <legend>gender*</legend>
+        male <input type="radio" name="gender" id="male" required> female <input type="radio" name="gender" id="female" required> other <input type="radio" name="gender" id="other" required>
         </fieldset>
     </p>
-    <p>email * <input type="email" name="email" id="email" placeholder="enter email" required></p>
-    <p>date * <input type="date" name="date" id="date"></p>
-    <p>pincode * <input type="number" name="pincode" id="pincode" placeholder="enter pincode" required></p>
-    <h2>click the box what have you</h2>
+    <p>email* <input type="email" name="email" id="email" placeholder="enter your email" required></p>
+    <p>date* <input type="date" name="date" id="date" placeholder="enter date" required></p>
+    <p>pincode* <input type="number" name="pincode" id="pincode" placeholder="enter you pin number" required></p>
     park<input type="checkbox" value="park">
-    bike<input type="checkbox" value="bike">
-    school<input type="checkbox" value="school">
-    friend <input type="checkbox" value="friend">
-    <h1>payment information</h1>
-    <p>card number <input type="password"></p>
-    <p>card type:* 
-        <select name="card type" id="card type">                                  
-    <option value=""> ---card type ---</option>
+    bike <input type="checkbox" value="bike">
+    <p>card type--*
+    <select name="card type" id="card type">
+    <option value=""---card type---></option>
     <option value="rupay">rupay</option>
+    <option value="master card">master card</option>
     <option value="visa">visa</option>
-    <option value="master card"> master card</option>
-        </select>
-    </p>
-    <p>expiration date * <input type="date" name="expiration date" id="expiration date"></p>
-    <p>cvv * <input type="password" name="cvv" id="cvv"></p>
-    <input type="submit" class="pay" value=" pay">
-    <input type="reset" value="reset">
-    </form>
-    </div>
-</div>
-</div>
+    </select>
+</p>
+<p>expiration date* <input type="date" name="date" id="name" placeholder="enter expiration date" required></p>
+<p>cvv* <input type="password" name="cvv" id="cvv" placeholder="enter cvv" required></p>
+<input type="submit" class="pay" value="pay">
+<input type="reset" class="reset" value="reset">
+</form>
 </body>
 </html>

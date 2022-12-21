@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button</title>
+    <style>
+        h1{
+            color: rgb(223, 226, 37);
+            font-size: 50px;
+            background-color: rgb(101, 137, 176);
+            
+            border: 2px solid blue;
+            border-radius: 10px;
+            padding: 3px 10px;
+            cursor: pointer;
+            
+            
+        }
+        .box{
+           text-align: center;
+           margin-left: 5cm;
+           margin-right: 5cm;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    <h1>press button</h1>
+    </div>
+<script>
+    //let namaste=document.querySelector('h1');
+    //namaste.addEventListener('click',showname);
+    //function showname(){
+      // let num1=prompt("enter number for sum ")
+       //num1=Number.parseInt(num1)
+        //let num2=prompt("enter number for sum ")
+          //num2=Number.parseInt(num2)
+        //let sum=num1+num2        
+
+        //namaste.textContent='sum is :'+sum;
+   //}
+   let sumfunc=document.querySelector('h1');
+   sumfunc.addEventListener('click',sumfunction);
+   function sumfunction(){
+    let a=prompt("enter name :")
+    sumfunc.textContent=("name is : "+a)
+   }
+</script>
+</body>
+</html>
