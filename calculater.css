@@ -1,0 +1,40 @@
+h1{
+    color: rgb(108, 88, 196);
+    text-align: center;
+}
+.flex{
+    display: flex;
+    flex-direction: column;
+
+}
+.container{
+  background: rgb(195, 126, 138);
+  display: inline;  
+}
+.row{
+    padding:5px;
+    text-align: center;
+}
+.button{
+    padding: 20px;
+    border:1px solid grey;
+    border-radius: 5px;
+    margin: 1px;
+}
+.input{
+    width: 195px;
+    height: 20px;
+    padding: 10px;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+.box1{
+    padding: 20px;
+}
+.box2{
+    padding: 16px;
+    height: 58px;
+}
+button:hover{
+    background: rgba(150, 146, 146, 0.856);
+}
