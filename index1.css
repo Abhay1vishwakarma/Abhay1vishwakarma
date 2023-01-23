@@ -1,0 +1,121 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.heading{
+    text-align: center;
+    color: rgba(190, 95, 12, 0.916);
+    
+}
+.headbox1{
+    color: rgba(21, 138, 227, 0.856);
+    text-align: center;
+    position: relative;
+    bottom: 300px;
+    font-size: 40px;
+}
+.headbox2{
+    text-align: center;
+    color: cornflowerblue;
+    font-size: 30px;
+    position: relative;
+    bottom: 300px;
+}
+.btn1{
+    padding: 10px;
+    width: 150px;
+    height: 50px;
+    border:2px solid grey;
+    border-radius: 5px;
+}
+.btn1:hover{
+    background-color: rgba(77, 151, 225, 0.869);
+    height: 50px;
+    width:150px ;
+}
+
+.btn0{
+    text-align: center;
+    position: relative;
+    bottom: 110px;
+    
+}
+
+
+
+.flex-row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-right: 25px;
+    
+ }
+ .img1{
+     width: 240px;
+     height: 210px;
+     border-radius: 5px;
+ }
+ button:hover{
+     width: 100px;
+     height: 30px;
+     background-color: rgba(52, 92, 225, 0.852);
+ }
+ button{
+     background-color: azure;
+     border: 1px solid black;
+     border-radius: 5px;
+     height: 30px;
+     width: 100px;
+ 
+ }
+ .flex-item{
+     width: 285x;
+     height: 360px;
+     background-color: bisque;
+     border-radius: 5px;
+     text-align: center;
+     padding: 10px;
+     margin-bottom: 10px;
+     margin-left: 15px;
+    
+ }
+.centerbox{
+    position: relative;
+    bottom: 140px;
+}
+
+
+.gamebtn{
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: rgba(12, 251, 243, 0.616);
+}
+.gamebtn:hover{
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: rgb(11, 181, 237);
+    
+}
+
+.game{
+    text-align: center;
+    
+}
+.result{
+    height: 80px;
+}
+.result:hover{
+    width: 300px;
+    height: 80px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: rgb(6, 250, 250);
+}
+.gamebox{
+    position: relative;
+    bottom: 80px;
+}
