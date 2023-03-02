@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apna collage todo list</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link disabled">Disabled</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+
+<main>
+    <div class="container mt-5 col-8">
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="chapter name" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button id="add_btn" class="btn btn-outline-success" type="button" id="button-addon2">Add</button>
+      </div> 
+      <ul id="parentlist"  class="list-group">
+        <li class="list-group-item d-flex justify-content-between"> 
+            <h3 class="flex-grow-1">Chapter 1 </h3>
+            <button class="btn btn-warning mx-3" onclick="editchapter(this)">Edit</button>
+            <button class="btn btn-danger" onclick="removechapter(this)">Remove</button>
+        </li>
+      </ul>
+      </div>
+</main>
+<script>
+let addbtn=document.getElementById("add_btn")
+addbtn.addEventListener("click",addchapter)
+let parentList=document.getElementById("parentlist")
+function addchapter(e){  
+  e.preventDefault()
+       if(parentList.children[0].className=="empty"){
+        parentList.children[0].remove()
+       } 
+       let currentbtn=e.currentTarget;
+       let currentinput=currentbtn.previousElementSibling
+       let currentchapter=currentinput.value
+       
+       let newli=document.createElement('li')
+       //newli.classList.add('list-group-item')
+       //newli.textContent=currentinput.value
+       newli.className="list-group-item d-flex justify-content-between" 
+       
+       newli.innerHTML=`
+       <h3 class="flex-grow-1">${currentchapter} </h3>
+       <button class="btn btn-warning mx-3" onclick="editchapter(this)">Edit</button>
+       <button class="btn btn-danger" onclick="removechapter(this)" >Remove</button>
+       `      
+      parentList.appendChild(newli)
+
+}
+ function removechapter(currelement){
+    currelement.parentElement.remove()
+    let parentList=document.getElementById("parentlist")
+    if(parentList.children.length<=0){
+      let emptysms=document.createElement("h4")
+      emptysms.classList.add("empty")
+      emptysms.textContent="Nothing is here .please add your note."
+      parentList.appendChild(emptysms)
+
+    }
+
+ }
+
+ function editchapter(currelement){
+  if(currelement.textContent=="Done"){
+    currelement.textContent="Edit"
+let currentchapername=currelement.previousElementSibling.value
+let currheading=document.createElement('h3')
+currheading.className="flex-grow-1"
+currheading.textContent=currentchapername
+currelement.parentElement.replaceChild(currheading,currelement.previousElementSibling)
+
+
+  }
+  else{
+    currelement.textContent="Done"
+let currentchapername=currelement.previousElementSibling.textContent
+let currinput=document.createElement('input')
+currinput.type="text"
+currinput.placeholder="edit your chapter."
+currinput.className="form-control"
+currinput.value=currentchapername
+
+currelement.parentElement.replaceChild(currinput,currelement.previousElementSibling)
+
+  }
+ }
+
+</script>
+
+
+</body>
+</html>
