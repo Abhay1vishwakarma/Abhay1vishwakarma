@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+    <style>
+        .refresh{
+            color: whitesmoke;
+            background-color: coral;
+            padding: 10px;
+            width: 150px;
+            border: 2px solid grey;
+            border-radius: 5px;
+            font-size: 20px;
+
+        }
+        #add{
+            color: whitesmoke;
+            background-color: coral;
+            padding: 10px;
+            width: 150px;
+            border: 2px solid grey;
+            border-radius: 50px;
+            font-size: 20px;
+            margin-top: 10px;
+
+        }
+        #todo{
+            height: 40px;
+            border-radius: 5px;
+            width: 250px;
+        }
+        #todo1{
+            height: 70px;
+            border-radius: 5px;
+            width: 250px;
+            border:2px solid black ;
+        }
+         .box{
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 5px;
+            margin:10px 50px 0px 50px;
+         }
+         .todolist{
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            border: 2px solid black;
+            margin-top: 5px;
+            border-radius: 15px;
+            margin-left: 5px;
+            margin-right: 5px;
+
+         }
+         #container1{
+           
+
+         }
+
+         .delete1{
+            height: 40px;
+            width: 100px;
+            position: relative;
+            top: 5px;
+            border-radius: 5px;
+            background-color: red;
+            color: white;
+            border: 2px solid grey
+         }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+<h1>create your list</h1>    
+<button class="refresh">Reset</button>
+<h2>Add your note-</h2>
+<input id="todo" type="text" placeholder="enter your todo">
+<br>
+<h2>Add your discruption-</h2>
+<!-- <textarea name="address" id="todo1" placeholder="enter discruption" cols="" rows="5" required></textarea> -->
+<input id="todo1" type="text" placeholder="enter your todo" row="5" >
+<br>
+<button id="add">+Add a note</button>
+<div  class="todolist">
+    <p>add</p>
+    <p>discruption</p>
+    <button id="delete" class="delete1">delete</button>
+    <!-- <button id="delete" onclick="localstorage.removeItem(title)" class="delete1">delete</button>  -->
+
+
+</div>
+<div id="container1" >
+
+</div>
+<h2>Things done.</h2>
+<script src="todolist.js"></script>
+</div>
+</body>
+</html>

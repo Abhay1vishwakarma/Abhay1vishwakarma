@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clock</title>
+    <style>
+        #btn{
+            font-size: 50px;
+            padding-right: 300px;
+            width: 100px;
+            background-color: antiquewhite;
+            border: 2px solid grey;
+            border-radius: 5px;
+            color: darkblue;
+
+        }
+        p{
+        text-align: center;
+        padding: 5px;
+        }
+        input{
+            text-align: center;
+            width: 140px;
+            height: 30px;
+            background-color: antiquewhite;
+            border: 2px solid grey;
+            border-radius: 5px;
+            color: darkblue;
+            font-size: 16px;
+        }
+        #container{
+            display: flex;
+            justify-content: center;
+            margin-right: 10px;
+        }
+        #setbtn{
+            width: 100px;
+            height: 50px;
+            background-color:cornflowerblue;
+            border:2px solid grey;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+<p> <button  id="btn">time:</button></p>
+<div id="container">
+<p id="input"><input type="number"  id="hour" placeholder="enter minute"></p>
+<p id="input"><input type="number"  id="seconds" placeholder="enter seconds"></p>
+</div>
+<p id="set"><button id="setbtn">Set alarm</button></p>
+
+    <script src="colock.js"></script>
+</body>
+</html>
+
+

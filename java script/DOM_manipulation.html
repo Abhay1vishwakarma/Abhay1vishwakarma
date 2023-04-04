@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom manipulation</title>
+</head>
+<body>
+    <ul id="element" data="valid">
+        <li>first element</li>
+        <li>second element</li>
+        <li>third element</li>
+    </ul>
+    <div class="alldivs">first day</div>
+    <script>
+        //const alldivs=document.getElementsByClassName("alldivs")
+        const alldivs=document.querySelectorAll(".alldivs")
+     console.log(alldivs)
+    </script>
+    <div class="alldivs">second day</div>
+    <ol>
+        <li class="element1">hii abhay</li>
+        <li id="element2">hii hemant</li>
+        <li class="element1">hii suman</li>
+    </ol>
+    <table>
+        <tr>
+            <td>one</td>
+            <td>two</td>
+        </tr>
+        <tr>
+            <td>four</td>
+            <td>five</td>
+        </tr>
+    </table>
+    <button id="clkbtn" onclick="alert('namaste world')"> click me</button>
+    <script>
+        //console.log(document.documentElement)
+        //console.log(document.childNodes)
+        //console.log(document.body.firstElementChild)
+        //console.log(document.body.children)
+        //console.log(document.body.firstElementChild.firstElementChild)
+        //const a=Array.from(document.body.children)
+        //console.log(a)
+        //console.log(document.body.children[0])
+        //console.log(document.body.children[1])
+        //console.log(document.body.children[2])
+        //const ultag=document.body.children[0]
+        //const firstli=ultag.children[0]
+        //console.log(firstli)
+        //const secndli=ultag.children[1]
+        //console.log(secndli)
+        //console.log(secndli.previousElementSibling.textContent)
+        
+
+
+        //console.log(ultag.nextElementSibling)
+        //const secondli=document.body.children[1]
+        //console.log(secondli.previousElementSibling)
+        //console.log(secondli.previousElementSibling.textContent)
+
+
+        //const tabletag=document.body.children[2]
+        //console.log(tabletag.firstElementChild)
+        //or
+        //console.log(tabletag.tBodies[0].rows[0].cells[1].style="color:blue;")
+        //console.log(tabletag.tBodies[0].rows[0].cells[0].style="color:blue;")
+        //console.log(tabletag.rows[1].textContent)
+
+        //console.log(element.style="background-color:pink")
+        const ultag=document.getElementById("element")
+        //console.log(ultag.style="background-Color:pink;")
+        //or
+        console.log(ultag.style.backgroundColor="pink")
+
+        listitem=document.getElementsByClassName("element1")
+        console.log(listitem) 
+        //console.log(listitem[0])
+        //console.log(listitem.length)
+        for(i=0;i<=listitem.length;i++){
+            console.log(listitem[i])
+
+        }
+        
+        listitem=document.querySelectorAll('.element1')
+     console.log(alldivs)
+     console.log(element.getAttribute('data'))
+     console.log(element.setAttribute('order-placed','pending'))
+     console.log(element.getAttribute('order-placed'))
+     console.log(element.hasAttribute('order-placed'))
+     console.log(element.removeAttribute('order-placed'))
+     console.log(element.hasAttribute('order-placed'))
+     console.log(element.attributes)
+     element2.remove()
+     element.remove()
+     function callme(){
+        alert("welcome to js")
+     }
+     clkbtn.onclick=callme
+    </script>
+</body> 
+</html>

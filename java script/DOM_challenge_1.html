@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom challenge</title>
+    <style>
+        table,tr,td{
+            border: 2px solid black;
+            padding: 10px;
+            border-spacing: 2px;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tbody>
+            <tr>
+                <td>box1</td>
+                <td>box2</td>
+                <td>box3</td>
+                <td>box4</td>
+            </tr>
+            <tr>
+                <td>box1</td>
+                <td>box2</td>
+                <td>box3</td>
+                <td>box4</td>
+            </tr>
+            <tr>
+                <td>box1</td>
+                <td>box2</td>
+                <td>box3</td>
+                <td>box4</td>
+            </tr>
+            <tr>
+                <td>box1</td>
+                <td>box2</td>
+                <td>box3</td>
+                <td>box4</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        console.log(document.body.firstElementChild)
+        const tabletag=document.body.children[0]
+        const bodytag=tabletag.children[0]
+        const trtag1=bodytag.children[0]
+console.log(trtag1)
+        const tdtag1=trtag1.children[0]
+        console.log(tdtag1.style="background-color:red;")
+        console.log(trtag1.children[1].style="background-color:blue;")
+        console.log(trtag1.children[2].style="background-color:green;")
+        console.log(trtag1.children[3].style="background-color:pink;")
+
+        const trtag2=bodytag.children[1]
+        console.log(trtag2.children[0].style="background-color:skyblue")
+        console.log(trtag2.children[1].style="background-color:yellow")
+        console.log(trtag2.children[2].style="background-color:grey")
+        console.log(trtag2.children[3].style="background-color:chocolate")
+
+        const trtag3=bodytag.children[2]
+        console.log(trtag3.children[0].style="background-color:lightgrey")
+        console.log(trtag3.children[1].style="background-color:lightblue")
+        console.log(trtag3.children[2].style="background-color:purple")
+        console.log(trtag3.children[3].style="background-color:red")
+
+        const trtag4=bodytag.children[3]
+        console.log(trtag4.children[0].style="background-color:blue")
+        console.log(trtag4.children[1].style="background-color:green")
+        console.log(trtag4.children[2].style="background-color:pink")
+        console.log(trtag4.children[3].style="background-color:yellow")
+
+
+
+ 
+       
+
+
+
+
+    </script>
+</body>
+</html>

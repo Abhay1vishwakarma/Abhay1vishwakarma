@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buttonexperiment</title>
+</head>
+<body>
+   <button onclick="alert('hello h1')"><h2>press button</h2></button>
+   <div class="btn"> <a  href="https://www.google.com"><button class="btn2">google</button></a> <br>
+    
+
+    <h1 id="box1">hello world</h1>
+
+<script>
+    //document.querySelector("h1").addEventListener("click",function(){
+       // alert('namaste world')    
+    //})
+    //or
+
+    //document.getElementById("box1").addEventListener("click",function(){
+      //  alert('namaste world')
+    //})
+    //or
+
+    //let x=document.getElementById("box1")
+    //x.addEventListener("click",function(){
+      //  alert('namaste world')
+    //})
+    let a=document.querySelector('h1')
+    a.addEventListener('click',function namebox(){
+        let b=prompt("enter greeting: ")
+        a.innerHTML=(b)
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+    <link rel="stylesheet" href="bulb.css">
+</head>
+<body style="background-color: black;">
+    <img id="bulb" src="apni file/img1-off.PNG" alt="" class="center">
+    <button id="togglebtn" class="center btn">Turn on</button>
+<script>
+    let btn=document.getElementById("togglebtn")
+    let bulb=document.getElementById("bulb")
+    btn.addEventListener("click",togglebtn)
+    function togglebtn(e){
+        if(btn.textContent.includes('on')){
+        bulb.src="apni file/img2-on.PNG"
+        btn.textContent="Turn off"
+    }
+    else{
+        bulb.src="apni file/img1-off.PNG"
+        btn.textContent="Turn on"
+    }
+}
+
+</script>
+</body>
+</html>
