@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>health pase</title>
+    <link rel="stylesheet" href="about.css">
+
+</head>
+<body>
+    <nav>
+        <ul class="navul ">
+        <img class="logoimg" src="./imgs/navlogo.png" alt="">
+        <div class="listitems alldlt ">
+        <li class="navli "  ><a class="nava" href="index.html"  rel="noopener noreferrer">Home</a></li>
+        <li class="navli "  ><a class="nava" href="About.html"  rel="noopener noreferrer">About</a></li>
+        <li class="navli "  ><a class="nava" href="Happylife.html"  rel="noopener noreferrer">Happy-life</a></li>
+        <li class="navli"  ><a class="nava" href="Health.html"  rel="noopener noreferrer">Health</a></li>
+        <li class="navli "  ><a class="nava" href="Contact.html"  rel="noopener noreferrer">Contact</a></li>
+        </div>
+        <div id="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        
+    </ul>
+   
+    </nav>
+    <footer>
+        <div class="footerflex">
+        <a  href="https://www.linkedin.com/in/abhay-vishwakarma-9aa93425a/"><img  class="linkedin" src="./imgs/linkedin.png" alt=""></a>
+        <div class="ownerimgbox">
+        <img class="ownerimg" src="./imgs/owner.png" alt="">
+        <h2 class="footh2">OUR FOUNDER</h2>
+        <h4 class="footh4">Abhay vishwakarma</h4>
+        </div>
+        <a  href="https://github.com/Abhay1vishwakarma/Abhay1vishwakarma" ><img class="github" src="./imgs/gitgub.png" alt=""></a>
+</div>
+    </footer>
+    
+   <script>
+    let navbtn=document.getElementById("burger")
+let navulbtn=document.querySelector(".navul")
+let listitem=document.querySelector(".listitems")
+let navlist=document.querySelectorAll(".navli")
+console.log(navlist)
+
+
+navbtn.addEventListener('click',()=>{
+  
+    listitem.classList.toggle("alldlt");
+})
+   </script> 
+</body>
+</html>
