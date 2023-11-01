@@ -1,0 +1,27 @@
+.header{
+    display: flex;
+    justify-content:space-between;
+    background-color:#00a8ff;
+    color: white;
+    padding:15px;
+    
+}
+.links{
+    text-decoration: none;
+    color:white;
+    padding-left: 50px;
+    margin: 0px;
+    font-size: 20px;
+   
+
+    
+}
+.linklogout{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    padding-right: 20px;
+}
+.logreg{
+  padding-right: 10px;
+}

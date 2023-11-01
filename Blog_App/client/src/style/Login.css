@@ -1,0 +1,26 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 35%;
+    margin-top: 4%;
+    
+}
+.input{
+    width: 50%;
+    text-align: center;
+}
+.logintitle{
+    text-align: center;
+    margin-top: 10px;
+    color:#00aaffd9 ;
+}
+.goregister{
+    color:#00aaffe6;
+    text-align: center;
+    margin-top: 10px;
+}
+.submitlogin{
+    text-align: center;
+    margin-top: 20px;
+}
